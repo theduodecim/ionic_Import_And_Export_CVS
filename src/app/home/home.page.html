@@ -1,14 +1,27 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Ionic Blank
+      Devdactic CSV
     </ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="exportCSV()">
+        Export
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+<ion-content scrollX="true">
+
+  <table border="1" class="data-table">
+    <tr>
+      <td *ngFor="let header of headerRow" text-center><b>{{ header }}</b></td>
+    </tr>
+    <tr *ngFor="let row of csvData; let i = index">
+      <td *ngFor="let cel of row; let j = index; trackBy: trackByFn">
+        <ion-input type="text" [(ngModel)]="csvData[i][j]"> </ion-input>
+      </td>
+    </tr>
+  </table>
+
 </ion-content>

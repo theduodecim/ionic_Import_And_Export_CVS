@@ -1,0 +1,7 @@
+Date,"First Name","Last Name","Email","Amount","Currency","InvoiceID","Country"
+08.22.2019,"Simon","Grimm","saimon@devdactic.com","50,00","EUR","0001","GER"
+08.21.2019,"Juan","Grimm","anotherEmail@other.com","45,00","EUR","0002","GER"
+08.19.2019,"Martin","Grimm","anotherEmail@other.com","40,00","EUR","0003","AR"
+08.18.2019,"Jane","Grimm","anotherEmail@other.com","35,00","EUR","0004","CO"
+08.17.2019,"Lucas","Grimm","anotherEmail@other.com","30,00","EUR","0005","CH"
+08.16.2019,"Thomas","Grimm","anotherEmail@other.com","25,00","EUR","0006","BR"

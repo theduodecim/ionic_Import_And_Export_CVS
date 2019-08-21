@@ -1,5 +1,7 @@
 {
   "name": "Upload_CSV_EditDownload",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
