@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class AppCSVService {
-  url = 'http://localhost:8100/assets/data/data1.csv';
+  url = 'http://localhost:4201/assets/data/data1.csv';
   constructor(public http: HttpClient) { }
 
 
