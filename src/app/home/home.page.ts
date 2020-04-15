@@ -5,11 +5,7 @@ import { File } from '@ionic-native/file/ngx';
 import { SocialSharing } from '@ionic-native/social-sharing/ngx';
 import { AppCSVService } from '../app-csv.service';
 
-class ImageSnippet {
-  pending = false;
-  status = 'initializing';
-  constructor(public src: string, public file: File) { }
-}
+
 
 @Component({
   selector: 'app-home',
@@ -22,7 +18,6 @@ export class HomePage {
   headerRow: any[] = [];
   public testHeaders;
   public testValues: any[] = [];
-  public selectedFile: ImageSnippet;
   constructor(
     public papa: Papa, public platf: Platform,
     public file: File, public csvService: AppCSVService, public socialSharing: SocialSharing) {
@@ -31,19 +26,10 @@ export class HomePage {
   }
 
   processFile(imageInput: any) {
-    //  console.log(imageInput);
+    //console.log(imageInput);
     const file: File = imageInput.files[0];
     console.log(file);
     this.extractData(file);
-    const reader = new FileReader();
-    reader.addEventListener('load', (event: any) => {
-      this.selectedFile = new ImageSnippet(event.target.result, file);
-      console.log(this.selectedFile);
-      console.log('asdasd');
-      // const tempFile = this.escapeSpecialChars(this.selectedFile.file);
-      this.selectedFile.pending = true;
-    });
-    // reader.readAsDataURL(file);
   }
 
   public extractData(res) {
