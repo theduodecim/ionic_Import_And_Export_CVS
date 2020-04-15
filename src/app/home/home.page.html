@@ -7,10 +7,10 @@
       <ion-button (click)="exportCSV()">
         Export
       </ion-button>
-      <input #imageInput name="sampleImage" type="file" accept="cvs" (change)="processFile(imageInput)">
-      <ion-input (change)="processFile(imageInput)">
+      <input #cvs name="sampleImage" type="file" accept="cvs" (change)="processFile(cvs)">
+      <!-- <ion-input #cvs (change)="processFile(cvs)">
         Import
-      </ion-input>
+      </ion-input> -->
     </ion-buttons>
   </ion-toolbar>
 </ion-header>

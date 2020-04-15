@@ -34,6 +34,7 @@ export class HomePage {
 
   public extractData(res) {
     console.log('method triggered');
+    /*
     let csvData = [
       { key: "-M4GMZB_pIITGiFBll9r", categoria: "bebidas", inventario: 20, nroprod: 1, preciocom: 25 },
       { key: "-M4GN2_ESiauto42s2ql", categoria: "Perfumería", inventario: 25, nroprod: 2, preciocom: 10 },
@@ -52,7 +53,7 @@ export class HomePage {
         this.testHeaders = Object.keys(items);
       }
     });
-
+*/
     // console.log(res);
     // tslint:disable-next-line:prefer-const
     let cvsString = res || '';
