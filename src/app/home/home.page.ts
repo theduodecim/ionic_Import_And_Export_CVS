@@ -25,9 +25,9 @@ export class HomePage {
     //  this.csvService.loadCSV().subscribe(data => this.extractData(data), err => console.log('something went wrong: ', err));
   }
 
-  processFile(imageInput: any) {
+  processFile(cvs: any) {
     //console.log(imageInput);
-    const file: File = imageInput.files[0];
+    const file: File = cvs.files[0];
     console.log(file);
     this.extractData(file);
   }
